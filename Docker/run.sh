@@ -1,2 +1,3 @@
 dotnet restore;
-dotnet run;
+cd webapp.unittests;
+dotnet test;

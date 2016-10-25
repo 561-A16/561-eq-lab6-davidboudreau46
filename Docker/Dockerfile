@@ -11,4 +11,6 @@ COPY /src /src
 
 #docker build -t webapp -f ./Docker/DockerFile . 
 
-#docker run -it --rm -v $PWN/packages:/root/.nuget/packages -p 8080:5000 webapp
+#docker run -it --rm -v $PWN/packages:/root/.nuget/packages -p 8080:5000 webapp:test
+
+#docker run -it --rm -v $PWD/packages:/root/.nuget/packages webapp:test
